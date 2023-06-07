@@ -1,0 +1,138 @@
+/* font style */
+*{
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+p{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* blog start */
+.cover{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding: 3% 0;
+}
+
+.blog-word{
+  margin: 0 5%;
+}
+
+.blog-button{
+text-align: center;
+padding-bottom: 1%;
+}
+
+.blog-button a{
+  padding: 1% 1.5%;
+}
+.url a{
+text-decoration: none;
+}
+
+.url a:link{
+  color: #ff790d !important;
+}
+
+.url a:visited{
+  color: #b56725 !important;
+}
+.url a:focus{
+  color: #b56725 !important;
+}
+.url a:hover{
+  color: #ff790d !important;
+}
+.url a:active{
+ color: #ff790d !important;
+}
+
+.year-old ul {
+  list-style: none;
+}
+
+.year-old ul li::before {
+  content: "\2022";
+  color: #fd7e14;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.year-old ol li {
+  counter-increment: list;
+  list-style-type: none;
+  position: relative;
+}
+
+.year-old ol li:before {
+  color: #ff790d;
+  content: counter(list) ".";
+  left: -32px;
+  position: absolute;
+  text-align: right;
+  width: 26px;
+}
+/* blog end */
+
+/* phone version */
+@media screen and (max-width: 991px){
+  /* nav button */
+  .nav{
+    overflow: auto;
+ }
+  /* arrow */
+  .arrow-up{
+  	height: 50px;
+  	width: 50px;
+    font-size: 25px;
+  	position: fixed;
+  	bottom: 30px;
+  	right: 30px;
+  	border-radius: 50px;
+    border: 2px solid white;
+  }
+  /* banner */
+  .banner{
+    padding-top: 160px;
+  }
+
+  /* footer */
+  .footer-logo{
+    padding: 0;
+  }
+  /* news */
+  .folder{
+    border-right: 0px solid #f7941d !important;
+  }
+  .folder .mask {
+    position: relative;
+    left: 0px;
+    top: 10px;
+    overflow: hidden;
+  }
+  .folder ul li{
+    padding-right:3%;
+  }
+  .news-adoption-row{
+    padding: 10% 0 0 0 !important;
+  }
+  .news {
+    padding: 3% 0 0% 6%;
+}
+  /* adoption */
+.adoption {
+    padding: 6% 0 10% 3%;
+}
+}
