@@ -124,19 +124,3 @@
 
 }(jQuery));
    
-// use this in your HTML if you need to change the parameters with the plugin call
-/* 
-$(document).ready(function(){
-    $('.thumbs').ie8Gallery({
-            thumbs:         '.thumbs',          // classname for thumbnail container
-            thumb:          '.thumb',           // classname for thumbnails
-            galleryImage:   '.galleryimage',    // classname for the gallery image
-            underlay:       '.underlay',        // classname for underlay
-            overlay:        '.overlay',         // classname for overlay
-            btnPrev:        '.prev',            // classname for previous button
-            btnNext:        '.next',            // classname for next button
-        }
-    );
-  $('.thumbs').ie8Gallery();
-});
-*/
